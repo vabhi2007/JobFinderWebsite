@@ -1,15 +1,16 @@
 
 
 nav{
+    z-index: 1;
 
     width:auto;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 
-    background: black;
+    background: rgba(0,0,0,0.86);
     opacity: 0.86;
 
     padding: 1rem;
@@ -21,7 +22,7 @@ nav{
 nav .title {
     color:rgb(255, 255, 255);
     font-size: 1.5rem;
-    margin-left: 2vw;
+    margin-left: 3vw;
     
     font-family: 'AbhayaLibre';
     font-size: 45px;
@@ -30,7 +31,7 @@ nav .title {
 ul{
     display: flex;
     align-items: center;
-    padding-right: 15%;
+    padding-right: 12.5%;
 }
 
 nav ul li {
@@ -62,18 +63,18 @@ nav ul li a:hover{
 nav .menu {
     display: none;
     position: absolute;
-    top: 0.5;
+    top: 1.15rem;
     right: 0.75rem;
     flex-direction: column;
     justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 1.5rem;
 }
 nav .menu span {
-    height: 0.4rem;
+    height: 0.26rem;
     width: 100%;
     background-color: white;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
 }
 
 @media (max-width: 1000px){
@@ -108,6 +109,11 @@ nav .menu span {
 
     nav ul li {
         padding: 0.25rem;
+        
+    }
+
+    nav .title {
+        font-size: 25px;
     }
     
     
