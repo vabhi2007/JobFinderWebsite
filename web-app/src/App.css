@@ -3,3 +3,13 @@
   height: 100%;
   width: 100%;
 }
+
+@font-face {
+  font-family: 'DongleLight';
+  src: url('./assets/fonts/Dongle/Dongle-Light.ttf');
+}
+
+@font-face {
+  font-family: 'AbhayaLibre';
+  src: url('./assets/fonts/AbhayaLibre/AbhayaLibre-Regular.ttf');
+}

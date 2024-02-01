@@ -22,6 +22,9 @@ nav .title {
     color:rgb(255, 255, 255);
     font-size: 1.5rem;
     margin-left: 2vw;
+    
+    font-family: 'AbhayaLibre';
+    font-size: 45px;
 }
 
 ul{
@@ -30,17 +33,27 @@ ul{
     padding-right: 15%;
 }
 
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
 nav ul li a {
     color: white;
-    font-family: Dongle;
-    font-size: 25px;
+    font-family: DongleLight;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
     line-height: normal;
     text-decoration: none;
     padding: 5vw;
-    margin: 0 0.5rem;
-    border-radius: 0.5rem;
+    padding-top: 3.75%;
+    padding-bottom: 0;
+    
+    
+    
     
 }
 nav ul li a:hover{
