@@ -1,11 +1,11 @@
 .filters {
     display: flex;
     flex-direction: column;
-
+    
   }
 .filters .outer-box {
   width: 45vw;
-  height: 25vw;
+  height: auto;
 
   border-radius: 21px;
   border: 2px solid black;
@@ -17,19 +17,29 @@
 
   display: grid;
   
-  padding: 2.5vw;
+  padding-left: 2.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
+
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 1vw;
 }
 
 .filters .outer-box .title {
-  grid-column: 1;
-  grid-row: 1;
   font-family: 'AbhayaLibre';
   font-size: 2vw;
 }
 
+
+.filters .outer-box .titleMain {
+  grid-column: 1;
+  grid-row: 1;
+}
 .filters .outer-box .filter1 {
   grid-column: 1;
   grid-row: 2;
@@ -75,6 +85,32 @@
   grid-row: 4;
   width: 100%;
 }
+.filters .outer-box .dropdownTitle {
+  grid-column: 1;
+  grid-row: 5;
+  width: 100%;
+}
+.filters .outer-box .dropdown {
+  grid-column: 1/4;
+  grid-row: 6;
+  width: 100%;
+}
+.filters .outer-box .filter10 {
+  grid-column: 1;
+  grid-row: 7;
+  width: 100%;
+}
+.filters .outer-box .filter11 {
+  grid-column: 2;
+  grid-row: 7;
+  width: 100%;
+}
+.filters .outer-box .filter12 {
+  grid-column: 3;
+  grid-row: 7;
+  width: 100%;
+}
+
 
 
 
