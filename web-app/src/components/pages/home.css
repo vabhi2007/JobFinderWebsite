@@ -10,7 +10,7 @@
   .imageBox {
     display: flex;
     height: auto;
-    background-image: url('./images/plant background.png');
+    background-image: url('./images/plant background trimmed.png');
     background-size: cover;
   }
   .imageBox .img {
