@@ -1,13 +1,15 @@
 import React from 'react'
 import "./home.css"
-import plantBackground from "./images/plant background.png"
+import plantBackground from "./images/plantbackground.png"
 
 const Home = () => {
   return (
     <div>
-      Home
-
-      <img src={plantBackground} className="center"></img>
+      
+      <div className='imageBox'>
+        <img className = "img" src={plantBackground}></img>
+      </div>
+      
       
     </div>
   )

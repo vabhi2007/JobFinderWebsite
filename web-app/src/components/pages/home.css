@@ -1,7 +1,18 @@
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    
     width: 100vw;
     z-index: -1;
+    
+    
+  }
+
+  .imageBox {
+    display: flex;
+    height: auto;
+    background-image: url('./images/plantbackground.png');
+    background-size: cover;
+  }
+  .imageBox .img {
+    position: relative;
   }
