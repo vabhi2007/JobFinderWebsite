@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Jobs.css"
-import plantBackground from "./images/plant background.png"
+import plantBackground from "./images/plantbackground.png"
 const Jobs = () => {
   return (
     <>
