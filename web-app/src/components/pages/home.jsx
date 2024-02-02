@@ -6,6 +6,9 @@ const Home = () => {
   return (
     <div>
       Home
+
+      <img src={plantBackground} class="center"></img>
+      
     </div>
   )
 }
