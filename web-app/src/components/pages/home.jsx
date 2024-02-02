@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import plantBackground from "./images/plant background.png"
+import plantBackground from "./images/plant background trimmed.png"
 
 const Home = () => {
   return (
@@ -9,8 +9,7 @@ const Home = () => {
       <div className='imageBox'>
         <img className = "img" src={plantBackground}></img>
       </div>
-      
-      
+   
     </div>
   )
 }
