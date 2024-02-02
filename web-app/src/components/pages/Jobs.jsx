@@ -2,17 +2,16 @@ import React from 'react'
 import "./Jobs.css"
 import plantBackground from "./images/plant background trimmed.png"
 import Filters from './filters'
+import JobListings from './JobLIstings'
 const Jobs = () => {
   return (
     <div>
       
       <div className='imageBox'>
-        <div className='landing-title'>
-          Careers
-        </div>
-        <img className = "img" src={plantBackground}></img>
+        
       </div>
       <Filters/>
+      <JobListings/>
     </div>
   )
 }

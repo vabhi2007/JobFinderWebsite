@@ -1,0 +1,12 @@
+.listings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.listings .listingBox {
+    
+    width: 47vw;
+    
+}

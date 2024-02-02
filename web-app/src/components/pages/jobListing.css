@@ -1,0 +1,64 @@
+.joblisting {
+    border-radius: 21px;
+    border: 2px solid #000;
+    width: 95.8%;
+    height: auto;
+
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 4fr 1.5fr;
+
+    font-family: DongleLight;
+
+    padding: 1vw;
+    
+    background: white;
+}
+
+.jobName {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: AbhayaLibre;
+    font-size: 2vw;
+}
+
+.jobLocation {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1.2vw;
+    align-self: center;
+}
+
+.jobDescription {
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 1.5vw;
+    line-height: 1.1vw;
+}
+
+.applyButton {
+    grid-column: 2;
+    grid-row: 2;
+
+    width: 80%;
+    height: 100%;
+    
+    flex-shrink: 0;
+
+    border: 2px solid black;
+    border-radius: 86px;
+    background: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    font-family: DongleLight;
+    font-size: 2vw;
+
+    display: block;
+}
+
+.applyButton:hover {
+    background: #C0D2C9; 
+}
