@@ -30,16 +30,51 @@
   font-size: 2vw;
 }
 
-.filters .outer-box .all-jobs {
+.filters .outer-box .filter1 {
   grid-column: 1;
   grid-row: 2;
   width: 100%;
 }
-
-.filters .outer-box button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
+.filters .outer-box .filter2 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
 }
+.filters .outer-box .filter3 {
+  grid-column: 1;
+  grid-row: 4;
+  width: 100%;
+}
+.filters .outer-box .filter4 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+}
+.filters .outer-box .filter5 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 100%;
+}
+.filters .outer-box .filter6 {
+  grid-column: 2;
+  grid-row: 4;
+  width: 100%;
+}
+.filters .outer-box .filter7 {
+  grid-column: 3;
+  grid-row: 2;
+  width: 100%;
+}
+.filters .outer-box .filter8 {
+  grid-column: 3;
+  grid-row: 3;
+  width: 100%;
+}
+.filters .outer-box .filter9 {
+  grid-column: 3;
+  grid-row: 4;
+  width: 100%;
+}
+
+
+

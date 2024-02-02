@@ -18,6 +18,9 @@
     display: block;
     
 }
+.clicked {
+    background: #C0D2C9; 
+}
 .button:hover {
     background: #C0D2C9; 
 }
