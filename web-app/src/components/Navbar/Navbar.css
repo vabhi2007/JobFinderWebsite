@@ -34,7 +34,7 @@ ul{
     display: flex;
     align-items: center;
     padding-right: 7.5%;
-    
+    padding-top: 0.8%;
     margin: 0;
 }
 
@@ -67,7 +67,7 @@ nav ul li a:hover{
 nav .menu {
     display: none;
     position: absolute;
-    top: 1.15rem;
+    top: 0.75rem;
     right: 0.75rem;
     flex-direction: column;
     justify-content: space-between;
@@ -82,7 +82,7 @@ nav .menu span {
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     nav .menu {
         display: flex;
     }
@@ -117,9 +117,12 @@ nav .menu span {
         
     }
 
-    nav .title {
-        font-size: 25px;
+    nav .Maintitle {
+        font-size: 40px;
     }
-    
+
+    nav ul li a {
+        font-size: 30px;
+    }
     
 }
