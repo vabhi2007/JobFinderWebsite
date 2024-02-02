@@ -1,24 +1,13 @@
-img {
-    width: 100%;
-    height: auto; /* Adjust as needed */
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: blur(1.600000023841858px);
-    
-}
 
-div .title {
-    z-index: 1;
-    color: #DBE2DE;
-}
 
-div .landing {
+
+
+.imageBox {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    
-}
+    height: auto;
+    background-image: url('./images/plantbackground.png');
+    background-size: cover;
+  }
+  .imageBox .img {
+    position: relative;
+  }
