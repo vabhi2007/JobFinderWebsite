@@ -3,12 +3,14 @@ import "./Jobs.css"
 import plantBackground from "./images/plantbackground.png"
 const Jobs = () => {
   return (
-    <>
-    <div className='landing'>
-    <img src={plantBackground} alt="" />
-      <div className='title'>Careers</div>
+    <div>
+      
+      <div className='imageBox'>
+        <img className = "img" src={plantBackground}></img>
+      </div>
+      
+      
     </div>
-     </>
   )
 }
 

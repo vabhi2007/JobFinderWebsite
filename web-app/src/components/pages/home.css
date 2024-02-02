@@ -1,18 +1,13 @@
-.center {
-    display: flex;
-    
-    width: 100vw;
-    z-index: -1;
-    
-    
-  }
+
 
   .imageBox {
     display: flex;
     height: auto;
+    width: 100vw;
     background-image: url('./images/plantbackground.png');
     background-size: cover;
   }
   .imageBox .img {
     position: relative;
+    width: fit-content;
   }
