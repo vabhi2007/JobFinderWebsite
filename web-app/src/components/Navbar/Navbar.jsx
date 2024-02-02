@@ -7,7 +7,8 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
-      <li className='title'>Verdantia | Careers</li>
+      
+      <li className='Maintitle'>Verdantia | Careers</li>
       <div className='menu' onClick={
         () => {
           setMenuOpen(!menuOpen);
