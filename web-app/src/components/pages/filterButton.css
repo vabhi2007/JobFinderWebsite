@@ -1,0 +1,23 @@
+.button {
+    width: 80%;
+    height: 80%;
+
+    flex-shrink: 0;
+
+    border: 2px solid black;
+    border-radius: 86px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    font-family: DongleLight;
+    font-size: 2vw;
+
+    display: block;
+    
+}
+.button:hover {
+    background: #C0D2C9; 
+}

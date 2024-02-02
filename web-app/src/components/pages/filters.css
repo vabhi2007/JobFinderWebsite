@@ -1,0 +1,45 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+
+  }
+.filters .outer-box {
+  width: 45vw;
+  height: 25vw;
+
+  border-radius: 21px;
+  border: 2px solid black;
+  background: white;
+
+  align-self: center;
+
+  margin: 2vw;
+
+  display: grid;
+  
+  padding: 2.5vw;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.filters .outer-box .title {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: 'AbhayaLibre';
+  font-size: 2vw;
+}
+
+.filters .outer-box .all-jobs {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+}
+
+.filters .outer-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+}

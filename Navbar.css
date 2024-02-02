@@ -1,5 +1,7 @@
 
-
+.active {
+    text-decoration: underline;
+}
 nav{
     z-index: 1;
 
@@ -26,7 +28,7 @@ nav .Maintitle {
     font-size: 1.5rem;
     margin-left: 3vw;
     
-    font-family: AbhayaLibre;
+    font-family: 'AbhayaLibre';
     font-size: 70px;
 }
 

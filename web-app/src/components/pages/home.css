@@ -12,7 +12,10 @@
     height: auto;
     background-image: url('./images/plant background trimmed.png');
     background-size: cover;
-  }
-  .imageBox .img {
     position: relative;
   }
+  .imageBox .img {
+    position: absolute;
+  }
+
+  
