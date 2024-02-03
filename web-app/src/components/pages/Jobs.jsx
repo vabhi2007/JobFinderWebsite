@@ -29,6 +29,22 @@ const allJobs = [
     description: "Responsibilities include designing and implementing eco-friendly technologies, assessing environmental impacts, and ensuring compliance with regulations. ",
     duration: "Internship",
     role: "Engineer"
+  },
+  {
+    name: "Carbon Footprint Manager",
+    location: "Seattle, WA",
+    place: "Hybrid",
+    description: "Assess and analyze the carbon emissions of a company or its products, and providing methods for reducing and offsetting these emissions.",
+    duration: "Full-Time",
+    role: "Manager"
+  },
+  {
+    name: "Forest Projects Coordinator",
+    location: "Seattle, WA",
+    place: "In Person",
+    description: "Coordinate and oversee forest projects to ensure successful planning, execution, and environmental conservation efforts.",
+    duration: "Full-Time",
+    role: "Coordinator"
   }
 
 ];
