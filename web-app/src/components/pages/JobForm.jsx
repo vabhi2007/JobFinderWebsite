@@ -3,7 +3,7 @@ import "./JobForm.css"
 const JobForm = () => {
   return (
     <div className='FormBox'>
-      Application
+      <div className='Heade'></div>
     </div>
   )
 }
