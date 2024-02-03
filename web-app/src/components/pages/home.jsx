@@ -14,11 +14,15 @@ const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { image: slide1, title: "Reforestation Initiatives", caption: "Verdantia has successfully planted over 500,000 trees in deforested regions, contributing to the restoration of critical ecosystems and providing habitat for various wildlife species." },
-    { image: slide2, title: "Carbon Neutrality Achieved", caption: "Through innovative technologies and sustainable practices, Verdantia has achieved carbon neutrality across its operations, making significant strides in reducing its carbon footprint." },
-    { image: slide3, title: "Eco-Education Outreach", caption: "Verdantia's dedicated teams have conducted eco-education programs in local communities, reaching over 10,000 individuals and inspiring environmentally conscious practices." },
-    { image: slide4, title: "Smart City Collaboration", caption: "Verdantia's smart city solutions with progressive municipalities have lowered energy usage, enhanced waste management efficiency, and elevated urban sustainability." },
-    { image: slide5, title: "Biodiversity Conservation", caption: "Verdantia actively supports biodiversity conservation efforts by protecting endangered species and preserving vital habitats." },
+    { image: slide1, title: "Reforestation Initiatives", caption: "Verdantia has successfully planted over 500,000 trees in deforested regions, contributing to the restoration of critical ecosystems and providing habitat for various wildlife species.", research: "\"30 per cent of emissions from industry and fossil fuels are soaked up by forests and woodlands. Yet every year the world loses 10 million hectares of forest. Deforestation and forest degradation accounts for 11 per cent of carbon emissions.\" - UN Environment Programme"},
+    
+    { image: slide2, title: "Carbon Neutrality Achieved", caption: "Through innovative technologies and sustainable practices, Verdantia has achieved carbon neutrality across its operations, making significant strides in reducing its carbon footprint.", research: "\"A recently published report identified that 100 energy companies have been responsible for 71% of all industrial emissions since human-driven climate change was officially recognized.\" - National Resources Defense Council"},
+    
+    { image: slide3, title: "Eco-Education Outreach", caption: "Verdantia's dedicated teams have conducted eco-education programs in local communities, reaching over 10,000 individuals and inspiring environmentally conscious practices.", research: "\"Environmental education is a process that allows individuals to explore environmental issues, engage in problem solving, and take action to improve the environment.\" - United States Environmental Protection Agency"},
+    
+    { image: slide4, title: "Smart City Collaboration", caption: "Verdantia's smart city solutions with progressive municipalities have lowered energy usage, enhanced waste management efficiency, and elevated urban sustainability.", research: "\"Digitalisation and smart controls can reduce emissions from buildings by 350 Mt CO2 by 2050.\" - International Energy Agency"},
+    
+    { image: slide5, title: "Biodiversity Conservation", caption: "Verdantia actively supports biodiversity conservation efforts by protecting endangered species and preserving vital habitats.", research: "\"The World Wide Fund for Nature’s Living Planet Report 2022 documents a 69% average loss in the abundance of mammal, bird, reptile, fish and amphibian species since 1970.\" - The London School of Economics and Political Science"},
   ];
 
   const prevSlide = () => {
@@ -114,7 +118,7 @@ const HomePage = () => {
           <button className="prev" onClick={prevSlide}>&#10094;</button>
           <div className="slide-title">{slides[currentSlide].title}</div>
           <div className="slide" style={{ backgroundImage: `url(${slides[currentSlide].image})`, opacity: '0.7' }}>
-            <p className="slide-overlay">"30 per cent of emissions from industry and fossil fuels are soaked up by forests and woodlands. Yet every year the world loses 10 million hectares of forest. Deforestation and forest degradation accounts for 11 per cent of carbon emissions."</p>
+            <p className="slide-overlay">{slides[currentSlide].research}</p>
           </div>
           <div className="slide-caption">{slides[currentSlide].caption}</div>
           <button className="next" onClick={nextSlide}>&#10095;</button>
