@@ -1,5 +1,6 @@
 
 import './App.css'
+import React, {useEffect} from 'react'
 import { Navbar } from './components/Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/pages/home'
@@ -8,9 +9,12 @@ import Benefits from './components/pages/Benefits'
 import Bar from './components/Navbar/Bar'
 import Citation from './components/pages/Citation'
 function App() {
-
+  useEffect (() => {
+    document.title = "Verdantia | Careers";
+  }, []);
   return (
     <>
+    
       <Bar/>
       <Navbar/>
       <Routes>
