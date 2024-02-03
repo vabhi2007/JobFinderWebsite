@@ -20,6 +20,7 @@ const JobLIstings = ({ jobs }) => {
                 JobLocation={job.location}
                 JobDescription={job.description}
                 JobPlace={job.place}
+                JobDuration={job.duration}
               />
             ))}
         </div>

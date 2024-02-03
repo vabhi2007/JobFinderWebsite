@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import './jobListing.css'
 import JobForm from './JobForm'
-const JobListing = ({JobName, JobLocation, JobPlace, JobDescription}) => {
+const JobListing = ({JobName, JobLocation, JobPlace, JobDescription, JobDuration}) => {
 
     const [isFormVisible, setFormVisible] = useState(false);
     const handleClick = () => {
@@ -17,7 +17,7 @@ const JobListing = ({JobName, JobLocation, JobPlace, JobDescription}) => {
         {JobName}
       </div>
       <div className='jobLocation'>
-        {JobLocation} | {JobPlace}
+        {JobLocation} | {JobPlace} | {JobDuration}
       </div>
       <div className='jobDescription'>
         {JobDescription}
@@ -37,6 +37,6 @@ JobListing.propTypes = {
     JobLocation: PropTypes.string.isRequired,
     JobPlace: PropTypes.string.isRequired,
     JobDescription: PropTypes.string.isRequired,
-    
+    JobDuration: PropTypes.string.isRequired
   }
 export default JobListing

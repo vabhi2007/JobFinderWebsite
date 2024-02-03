@@ -9,7 +9,7 @@ const Filters = ({ addFilter, removeFilter}) => {
         
         <div className='outer-box'>
           <div className='titleMain title'>Jobs at Verdantia</div>
-            <div className='filter1'><FilterButton text='All Jobs'/></div>
+            
             <div className='filter2'><FilterButton onSelect={() => {
               addFilter("role", "Engineer");
             }} onDeselect={() => {
@@ -31,20 +31,20 @@ const Filters = ({ addFilter, removeFilter}) => {
             }} onDeselect={() => {
               removeFilter("role", "Scientist")
             }} text='Scientist'/></div>
-            <div className='filter6'><FilterButton onSelect={() => {
+            <div className='filter1'><FilterButton onSelect={() => {
               addFilter("role", "Coordinator");
             }} onDeselect={() => {
               removeFilter("role", "Coordinator")
             }} text='Coordinator'/></div>
             <div className='filter7'><FilterButton onSelect={() => {
-              addFilter("duration", "Full Time");
+              addFilter("duration", "Full-Time");
             }} onDeselect={() => {
-              removeFilter("duration", "Full Time")
+              removeFilter("duration", "Full-Time")
             }} text='Full Time'/></div>
             <div className='filter8'><FilterButton onSelect={() => {
-              addFilter("duration", "Part Time");
+              addFilter("duration", "Part-Time");
             }} onDeselect={() => {
-              removeFilter("duration", "Part Time")
+              removeFilter("duration", "Part-Time")
             }} text='Part Time'/></div>
             <div className='filter9'><FilterButton onSelect={() => {
               addFilter("duration", "Internship");
