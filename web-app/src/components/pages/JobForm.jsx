@@ -2,6 +2,22 @@ import React, {useState} from 'react'
 import "./JobForm.css"
 const JobForm = () => {
 
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  }
+
+  const handleUpload = () => {
+    // Process the selected file locally
+    if (selectedFile) {
+      console.log('Selected file:', selectedFile);
+      // You can perform any operations with the file here, such as reading its content, etc.
+    } else {
+      console.log('No file selected');
+    }
+  };
+
   const [isSubmitted, setSubmit] = useState(false);
   const handleClick = () => {
     if (isSubmitted == false){
@@ -20,8 +36,17 @@ const JobForm = () => {
       <div className='Name'>Phone</div>
       <input type="text" className='InputBox'/>
       <div className='Name'>Resume</div>
-      <button className='Upload'>Upload</button>
-      <button className={isSubmitted ? 'Submit clicked' : 'Submit'} onClick={handleClick}>
+      <div>
+      <input type="file" onChange={handleFileChange}/>
+      <button className={selectedFile == null ? 'Upload' : 'Upload clicked'} onClick={handleUpload}>
+        {selectedFile == null && <p>Upload</p>}
+        {selectedFile != null && <p>File Selected</p>}
+      </button>
+      
+      </div>
+    
+      
+        <button className={isSubmitted ? 'Submit clicked' : 'Submit'} onClick={handleClick}>
         {isSubmitted && <p>Submitted</p>}
         {!isSubmitted && <p>Submit</p>}
       </button>
