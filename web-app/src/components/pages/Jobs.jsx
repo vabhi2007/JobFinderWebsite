@@ -95,6 +95,17 @@ const Jobs = () => {
 
   return (
     <div>
+      <section className="landing-page">
+        {/* Background Image */}
+        <img className = "img" src={plantBackground}></img>
+        {/* Content */}
+        <div className="landing-content">
+          <p className="welcome-message">Discover your <br /> next Job!</p>
+          <p className="caption">Explore your passions</p>
+          {/* Use Link to navigate to the JobsPage */}
+          
+        </div>
+      </section>
       
       <Filters addFilter={addFilter} removeFilter={removeFilter}/>
       <JobListings jobs={jobsToRender}/>
