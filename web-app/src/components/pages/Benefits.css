@@ -1,14 +1,12 @@
-
-  
-  
-  body, html {
+ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #DDE8E2;
+    z-index: -999;
   }
   
-  .entirePage {
+ .entirePage {
     height: 100%;
     position: relative;
   }
@@ -16,7 +14,8 @@
  
  .imageBox {
     position: relative;
-    z-index: 0;
+    z-index: -99;
+    overflow: hidden;
   }
 
     
@@ -26,13 +25,44 @@
     height: auto;
   }
 
+  .landing-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3E3E3E;
+  }
+  
+  .landing-background-image {
+    background-image: url('./images/plant background trimmed.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sustainable-background-image {
+    background-image: url('./images/sustainable.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 174%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+  }
+
   .header-career {
     position: absolute;
     top: 27%;
     left: 17.3%;
     transform: translate(-50%, -50%);
     text-align: left;
-    z-index: 1; 
+    z-index: 2; 
     font-size: 8vw;
     font-family: "Enriqueta" ;
     font-weight: normal;
@@ -44,7 +74,7 @@
   
   .header-benefits {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 20%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -62,7 +92,7 @@
     text-align: center;
     margin-top: 1vw; 
     position: absolute;
-    top: 86.3%;
+    top: 73.3%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -88,21 +118,22 @@
     position: absolute;
     top: 110%;
     left: 50%;
-    margin-left: -0.4vw; /* Adjust the margin-left to center the arrow */
+    margin-left: -0.4vw; 
     border-width: 0.4vw;
     border-style: solid;
     border-color: transparent transparent #2D1505 transparent;
     z-index: 2;
     transform: rotate(180deg);
-  }
-  .employee-benefits {
+  } 
 
+  .employee-benefits {
+    z-index: 4;
     position: absolute;
-    top: 117%;
+    top: 115%;
     left: 32.5%;
     transform: translate(-50%, -50%);
     text-align: left;
-    z-index: 1;
+    
     font-size: 2.5vw;
     font-family: "Enriqueta" ;
     margin-top: 1px;
@@ -115,7 +146,7 @@
   
   .box1 {
     position: absolute;
-    top:125%;
+    top: 125%;
     left: 25%;
     width: 9vw;
     height: 11vw;
@@ -124,6 +155,7 @@
     overflow: hidden;
     box-shadow: 0 .1vw .2vw rgba(0, 0, 0, 0.1);
     background-color: #B8D9CA;
+    z-index: 1;
 
   }
 
@@ -138,6 +170,7 @@
     overflow: hidden;
     box-shadow: 0 .1vw .2vw rgba(0, 0, 0, 0.1);
     background-color: #B8D9CA;
+    z-index: 1;
 
   }
   .box3 {
@@ -151,6 +184,7 @@
     overflow: hidden;
     box-shadow: 0 .1vw .2vw rgba(0, 0, 0, 0.1);
     background-color: #B8D9CA;
+    z-index: 1;
 
   }
   .box4 {
@@ -164,6 +198,7 @@
     overflow: hidden;
     box-shadow: 0 .1vw .2vw rgba(0, 0, 0, 0.1);
     background-color: #B8D9CA;
+    z-index: 1;
 
   }
   .box5 {
@@ -177,63 +212,69 @@
     overflow: hidden;
     box-shadow: 0 .1vw .2vw rgba(0, 0, 0, 0.1);
     background-color: #B8D9CA;
+    z-index: 1;
 
   }
+
 
   
   .family {
     position:absolute;
     top: 5%;
     left: 5%;
-    width: 7vw; /* Adjust as needed */
+    width: 7vw; 
     height: 7vw;
     background-image: url('./images/family.png'); 
     background-size: cover;
     opacity: 90%;
-    
+    z-index: 1;
+
   }
 
   .ladder {
     position:absolute;
     top: 10%;
     left: 12%;
-    width: 6vw; /* Adjust as needed */
+    width: 6vw; 
     height: 6vw;
     background-image: url('./images/ladder.png'); 
     background-size: cover;
     opacity: 90%;
-    
+    z-index: 1;
+
   }
 
   .meal {
     position:absolute;
     top: 5%;
     left: 5%;
-    width: 7vw; /* Adjust as needed */
+    width: 7vw;
     height: 7vw;
     background-image: url('./images/meal.png'); 
     background-size: cover;
     opacity: 90%;
-    
+    z-index: 1;
+
   }
 
   .health {
     position:absolute;
     top: 5%;
     left: 5%;
-    width: 8vw; /* Adjust as needed */
+    width: 8vw; 
     height: 7vw;
     background-image: url('./images/health.png'); 
     background-size: contain;
     opacity: 90%;
-    
+    z-index: 1;
+
   }
 
   .retirement {
     position:absolute;
     top: 5%;
     left: 5%;
-    width: 8vw; /* Adjust as needed */
+    width: 8vw;
     height: 6.77vw;
     background-image: url('./images/retirement.png'); 
     background-size: contain;
@@ -244,7 +285,7 @@
   .box-content {
     position: inherit;
     padding: 0.2vw;
-    top: 60%;
+    top: 72%;
     left: 0%;
     text-align: center;
     font-size: 1.3vw;
@@ -254,10 +295,26 @@
 
   }
 
+  .benefit-desc {
+
+    position: absolute;
+    top: 162%;
+    left: 49.8%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    align-self: start;
+    z-index: 1;
+    font-size: 1.5vw;
+    font-family: "DongleLight" ;
+    color: rgb(52, 52, 52);
+    padding: 0%;
+
+  }
+
   .question {
 
     position: absolute;
-    top: 189%;
+    top: 223%;
     left: 36%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -274,7 +331,7 @@
   .reason1-h {
 
     position: absolute;
-    top: 60%;
+    top: -20%;
     left: 20.8%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -292,7 +349,7 @@
 
 
     position: absolute;
-    top: -11%;
+    top: -29%;
     left: 26.3%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -310,7 +367,7 @@
 
     position: absolute;
     top: -14%;
-    left: 35.0%;
+    left: 35.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -327,8 +384,8 @@
   .reason1 {
 
     position: absolute;
-    top: 196%;
-    left: 49.8%;
+    top: 246%;
+    left: 46.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -343,8 +400,8 @@
   .reason2 {
 
     position: absolute;
-    top: 254%;
-    left: 49.8%;
+    top: 271%;
+    left: 46.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -359,8 +416,8 @@
   .reason3 {
 
     position: absolute;
-    top: 317%;
-    left: 49.8%;
+    top: 301%;
+    left: 46.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -374,4 +431,8 @@
 
   }
 
-  
+  .line-wrap {
+    overflow-wrap: break-word;
+    max-width: 75ch; 
+  }
+   
