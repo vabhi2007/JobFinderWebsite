@@ -95,6 +95,7 @@ const Jobs = () => {
 
   return (
     <div>
+      
       <section className="landing-page">
         {/* Background Image */}
         <img className = "img" src={plantBackground}></img>
@@ -106,6 +107,8 @@ const Jobs = () => {
           
         </div>
       </section>
+      
+      
       
       <Filters addFilter={addFilter} removeFilter={removeFilter}/>
       <JobListings jobs={jobsToRender}/>

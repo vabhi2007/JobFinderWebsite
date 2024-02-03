@@ -35,7 +35,6 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      {/* Section 1: Landing Page */}
       <section className="landing-page">
         {/* Background Image */}
         <img className = "img" src={plantBackground}></img>

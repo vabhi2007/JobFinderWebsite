@@ -20,25 +20,19 @@ const Benefits = () => {
   return (
 
     
-    <div className='entirePage'>
-      <section>
-       <div className="landing-background-image"></div>
-
-        <header className='header-career'>
-          <p>Career</p>
-        </header>
-        <header className='header-benefits'>
-          <p>Benefits</p>
-        </header>  
-        <div className="seeMoreButton">
-          <button className="trackButton"onClick={handleSeeMoreClick}>See More</button>
-        </div>        
-
-
-      </section>
-    
-      <section className='scrollToSection'>
-      {/*Employee Benefits Heading*/}
+    <div>
+      
+      <section className="landing-page">
+        {/* Background Image */}
+        <img className = "img" src={plantBackground}></img>
+        {/* Content */}
+        <div className="landing-content">
+          <p className="welcome-message">Career <br /> Benefits</p>
+          
+          {/* Use Link to navigate to the JobsPage */}
+          
+        </div>
+        {/*Employee Benefits Heading*/}
         <header id="employee-benefits" className="employee-benefits">
           <p>Employee Benefits</p>
         </header>
@@ -91,7 +85,7 @@ const Benefits = () => {
 
         </div>
 
-      </section>
+      
 
       <div className="sustainable-background-image"></div>
       {/*Why Come to Verdantia Heading*/}
@@ -111,7 +105,7 @@ const Benefits = () => {
           </header>
           
           <header className='reason2'>
-          <p className='reason4-h'>2. You can define your own path</p>
+          <p className='reason2-h'>2. You can define your own path</p>
             <p className='line-wrap'>
               At Verdantia, we believe that every individual brings a unique set of skills, talents, and aspirations to 
               the table. That's why we're proud to foster an environment where you don't just have a job – you have a 
@@ -134,6 +128,9 @@ const Benefits = () => {
   
         {/* <img className = "img" src={plantBackground}></img>    */}
         </section>
+      </section>
+      
+      
     </div>
 
   )

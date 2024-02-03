@@ -20,3 +20,68 @@
   z-index: 1;
   align-self: center;
 }
+
+.landing-container {
+  position: relative;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Section 1: Landing Page */
+.landing-page {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3E3E3E;
+}
+
+.landing-background-image {
+  background-image: url('./images/plant background trimmed.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.landing-content {
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  padding: 2vw;
+  left: 2vw;
+  top: 3vw;
+}
+
+.welcome-message {
+  font-family: 'Enriqueta-Regular';
+  font-size: 8vw;
+  margin-bottom: 1vw;
+}
+
+.caption {
+  font-family: 'DongleLight';
+  font-size: 3.5vw;
+  margin-bottom: 30px;
+  margin-left: 1.5vw;
+}
+
+.join-button {
+  background-color: #3E3E3E;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  padding: 0.75vw 3vw;
+  border: none;
+  border-radius: 3vw;
+  cursor: pointer;
+  font-family: 'DongleLight';
+  margin-left: 1vw;
+}
