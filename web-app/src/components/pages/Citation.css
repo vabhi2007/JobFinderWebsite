@@ -1,0 +1,20 @@
+.citation-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.citation-container .title {
+    font-family: DongleLight;
+    font-size: 3vw;
+}
+.citation {
+    border: 0.1vw solid black;
+    border-radius: 0.5vw;
+    background: white;
+    width: auto;
+    padding: 1vw;
+    margin: 0.5vw;
+
+    font-family: DongleLight;
+    font-size: 1.5vw;
+}

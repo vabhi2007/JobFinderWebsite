@@ -13,6 +13,7 @@ export const Navbar = () => {
         <li><NavLink to = "/">Home</NavLink></li>
         <li><NavLink to = "/benefits">Benefits</NavLink></li>
         <li><NavLink to = "/jobs">Jobs</NavLink></li>
+        <li><NavLink to = "/citations">Citations</NavLink></li>
       </ul>
       <div className='menu' onClick={
         () => {

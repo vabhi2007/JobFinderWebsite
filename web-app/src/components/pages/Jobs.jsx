@@ -102,7 +102,7 @@ const Jobs = () => {
         {/* Content */}
         <div className="landing-content">
           <p className="welcome-message">Discover your <br /> next Job!</p>
-          <p className="caption">Explore your passions</p>
+          <p className="caption">Explore your passions.</p>
           {/* Use Link to navigate to the JobsPage */}
           
         </div>

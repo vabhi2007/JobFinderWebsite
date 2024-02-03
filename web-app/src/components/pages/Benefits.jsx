@@ -28,7 +28,7 @@ const Benefits = () => {
         {/* Content */}
         <div className="landing-content">
           <p className="welcome-message">Career <br /> Benefits</p>
-          
+          <p className="caption">Explore our opportunities.</p>
           {/* Use Link to navigate to the JobsPage */}
           
         </div>
