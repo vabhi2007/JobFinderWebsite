@@ -6,9 +6,6 @@
     z-index: -999;
   }
   
- 
- 
- 
   .imageBox {
     display: flex;
     height: auto;
@@ -114,7 +111,7 @@
     text-align: left;
     z-index: 2; 
     font-size: 8vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     font-weight: normal;
     margin-top: 1px;
     margin-bottom: 0px;
@@ -130,7 +127,7 @@
     text-align: left;
     z-index: 1;
     font-size: 8vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     margin-top: 1px;
     margin-bottom: 0px;
     color: rgb(52, 52, 52);
@@ -185,7 +182,7 @@
     text-align: left;
     
     font-size: 2.5vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     margin-top: 1px;
     margin-bottom: 0px;
     color: rgb(52, 52, 52);
@@ -371,7 +368,7 @@
     text-align: left;
     z-index: 1;
     font-size: 2.5vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     margin-top: 1px;
     
     color: rgb(52, 52, 52);
@@ -389,7 +386,7 @@
     align-self: start;
     z-index: 1;
     font-size: 2.1vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
 
     color: rgb(52, 52, 52);
     padding-top: 2.5vw;
@@ -407,7 +404,7 @@
     align-self: start;
     z-index: 3;
     font-size: 2.1vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     white-space: nowrap;
     color: rgb(52, 52, 52);
     padding-top: 10.5vw;
@@ -424,7 +421,7 @@
     align-self: start;
     z-index: 3;
     font-size: 2.1vw;
-    font-family: "Enriqueta" ;
+    font-family: "Enriqueta-Regular" ;
     white-space: nowrap;
     color: rgb(52, 52, 52);
     padding: 0%;
