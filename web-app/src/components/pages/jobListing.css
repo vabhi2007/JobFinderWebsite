@@ -1,24 +1,19 @@
+/* Styles for the job listing container */
 .joblisting {
     border-radius: 1vw;
     border: 0.1vw solid #000;
     width: 95.8%;
     height: auto;
-
     display: grid;
     grid-template-rows: 4;
     grid-template-columns: 4fr 1.5fr;
-
     font-family: DongleLight;
-
     padding: 1vw;
-    
     background: white;
-
     margin-bottom: 2vw;
-
-    
 }
 
+/* Styles for the job name */
 .jobName {
     grid-column: 1;
     grid-row: 1;
@@ -26,6 +21,7 @@
     font-size: max(2vw, 6px);
 }
 
+/* Styles for the job location */
 .jobLocation {
     grid-column: 1;
     grid-row: 2;
@@ -33,6 +29,7 @@
     align-self: center;
 }
 
+/* Styles for the job description */
 .jobDescription {
     grid-column: 1;
     grid-row: 4;
@@ -40,38 +37,35 @@
     line-height: 0.7;
 }
 
+/* Styles for the apply button */
 .applyButton {
     grid-column: 2;
     grid-row: 2;
-
     width: auto;
     height: auto;
-    
     flex-shrink: 0;
-
     border: 0.1vw solid black;
     border-radius: 2vw;
     background: white;
     display: flex;
     align-self: center;
-    
     transition: background-color 0.3s ease;
-
     font-family: DongleLight;
     font-size: max(2vw, 5px);
-
     display: block;
-
 }
 
+/* Reset margin for paragraphs */
 p {
     margin: 0;
 }
 
+/* Styles for the clicked state of the apply button */
 .clicked {
     background: #C0D2C9; 
 }
 
+/* Hover styles for the apply button */
 .applyButton:hover {
     background: #C0D2C9; 
 }

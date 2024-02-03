@@ -15,6 +15,7 @@ const JobLIstings = ({ jobs }) => {
         <div className='listingBox'>
             {jobs.map((job, i) => (
               <JobListing 
+              //Various parts of each job
                 key={i}
                 JobName={job.name}
                 JobLocation={job.location}

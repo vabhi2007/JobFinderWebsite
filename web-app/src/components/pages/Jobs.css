@@ -1,5 +1,4 @@
-
-
+/* Section 1: Image Box */
 .imageBox {
   display: flex;
   height: auto;
@@ -8,6 +7,8 @@
   position: relative;
   overflow: hidden;
 }
+
+/* Image inside Image Box */
 .imageBox .img {
   position: relative;
   width: 100%;
@@ -15,16 +16,19 @@
   z-index: -1;
 }
 
+/* Title inside Image Box */
 .imageBox .landing-title {
   position: relative;
   z-index: 1;
   align-self: center;
 }
 
+/* Container for the Landing Page */
 .landing-container {
   position: relative;
 }
 
+/* Additional Styling for Images */
 .img {
   position: relative;
   width: 100%;
@@ -41,6 +45,7 @@
   color: #3E3E3E;
 }
 
+/* Background Image for Landing Page */
 .landing-background-image {
   background-image: url('./images/plant background trimmed.png');
   background-size: cover;
@@ -52,6 +57,7 @@
   height: 100%;
 }
 
+/* Content Container for Landing Page */
 .landing-content {
   position: absolute;
   z-index: 1;
@@ -61,12 +67,14 @@
   top: 3vw;
 }
 
+/* Welcome Message in Landing Page */
 .welcome-message {
   font-family: 'Enriqueta-Regular';
   font-size: 8vw;
   margin-bottom: 1vw;
 }
 
+/* Caption in Landing Page */
 .caption {
   font-family: 'DongleLight';
   font-size: 3.5vw;
@@ -74,6 +82,7 @@
   margin-left: 1.5vw;
 }
 
+/* Join Button in Landing Page */
 .join-button {
   background-color: #3E3E3E;
   color: rgb(255, 255, 255);

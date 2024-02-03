@@ -1,10 +1,14 @@
-import React from 'react'
-import "./Citation.css"
+import React from 'react';
+import "./Citation.css";
+
+// Citation component displaying a list of citations
 const Citation = () => {
   return (
     <div>
       <ul className='citation-container'>
+        {/* Title of the citation section */}
         <div className='title'>Citations</div>
+        {/* List of citations */}
         <li className='citation'>https://www.unep.org/resources/factsheet/deforestation</li>
         <li className='citation'>https://www.nrdc.org/bio/josh-axelrod/corporate-honesty-and-climate-change-time-own-and-act</li>
         <li className='citation'>https://www.epa.gov/education/what-environmental-education</li>
@@ -21,7 +25,7 @@ const Citation = () => {
         <li className='citation'>Photo by Roman Biernacki from Pexels: https://www.pexels.com/photo/a-from-perching-on-a-leaf-19306830/</li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default Citation
+export default Citation;

@@ -6,6 +6,8 @@
 }
 
 
+/* Font definitions using @font-face */
+
 @font-face {
   font-family: 'DongleLight';
   src: url('./assets/fonts/Dongle/Dongle-Light.ttf');

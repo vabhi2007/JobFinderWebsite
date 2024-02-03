@@ -1,9 +1,8 @@
+/* Button styling */
 .button {
     width: 80%;
     height: 80%;
-
     flex-shrink: 0;
-
     border: 0.1vw solid black;
     border-radius: 2vw;
     background: white;
@@ -11,16 +10,17 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
-
     font-family: DongleLight;
     font-size: 2vw;
+    display: block; /* Ensures the button behaves like a block element */
+}
 
-    display: block;
-    
-}
+/* Styling for when the button is clicked */
 .clicked {
-    background: #C0D2C9; 
+    background: #C0D2C9; /* Change background color when clicked */
 }
+
+/* Styling for when the button is hovered over */
 .button:hover {
-    background: #C0D2C9; 
+    background: #C0D2C9; /* Change background color on hover */
 }

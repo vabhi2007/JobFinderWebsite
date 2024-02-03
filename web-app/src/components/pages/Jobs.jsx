@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
-import "./Jobs.css"
-import plantBackground from "./images/plant background trimmed.png"
-import Filters from './filters'
+import React, { useState } from 'react';
+import "./Jobs.css";
+import plantBackground from "./images/plant background trimmed.png";
+import Filters from './filters';
 import JobListings from './JobLIstings';
 
-
+// Sample job data
 const allJobs = [
   {
     name: "Environmental Scientist",
     location: "Seattle, WA",
     place: "In Person",
-    description: "Conduct research to understand and mitigate the impact of human activities on the environment. ",
+    description: "Conduct research to understand and mitigate the impact of human activities on the environment.",
     duration: "Full-Time",
     role: "Scientist"
   },
@@ -18,7 +18,7 @@ const allJobs = [
     name: "Renewable Energy Analyst",
     location: "New York City, NY",
     place: "Hybrid",
-    description: "Analyze data to assess the feasibility and efficiency of renewable energy projects, such as solar, wind, or bioenergy. ",
+    description: "Analyze data to assess the feasibility and efficiency of renewable energy projects, such as solar, wind, or bioenergy.",
     duration: "Part-Time",
     role: "Analyst"
   },
@@ -26,7 +26,7 @@ const allJobs = [
     name: "Environmental Engineer",
     location: "London, UK",
     place: "Remote",
-    description: "Responsibilities include designing and implementing eco-friendly technologies, assessing environmental impacts, and ensuring compliance with regulations. ",
+    description: "Responsibilities include designing and implementing eco-friendly technologies, assessing environmental impacts, and ensuring compliance with regulations.",
     duration: "Internship",
     role: "Engineer"
   },
@@ -46,16 +46,18 @@ const allJobs = [
     duration: "Full-Time",
     role: "Coordinator"
   }
-
 ];
+
 const Jobs = () => {
+  // State for filters
   const [location, changeLocation] = useState("");
   const [places, changePlaces] = useState([]);
   const [durations, changeDurations] = useState([]);
   const [roles, changeRoles] = useState([]);
 
+  // Add filter based on type and value
   const addFilter = (type, value) => {
-    switch(type) {
+    switch (type) {
       case "location":
         changeLocation(value);
         break;
@@ -64,72 +66,63 @@ const Jobs = () => {
         break;
       case "duration":
         changeDurations(prev => [...prev, value]);
-        break
+        break;
       case "role":
         changeRoles(prev => [...prev, value]);
         break;
+      default:
+        break;
     }
-    // console.log(type, value);
   }
 
+  // Remove filter based on type and value
   const removeFilter = (type, value) => {
-      switch(type) {
-        case "location":
-          changeLocation("");
-          break;
-        case "place":
-          changePlaces(prev => {
-            let i = prev.indexOf(value);
-            return [...prev.splice(i, 1)]
-          });
-          break;
-        case "duration":
-          changeDurations(prev => {
-            let i = prev.indexOf(value);
-            return [...prev.splice(i, 1)]
-          });
-          break;
-        case "role":
-          changeRoles(prev => {
-            let i = prev.indexOf(value);
-            return [...prev.splice(i, 1)]
-          })
-          break;
-      }
+    switch (type) {
+      case "location":
+        changeLocation("");
+        break;
+      case "place":
+        changePlaces(prev => prev.filter(item => item !== value));
+        break;
+      case "duration":
+        changeDurations(prev => prev.filter(item => item !== value));
+        break;
+      case "role":
+        changeRoles(prev => prev.filter(item => item !== value));
+        break;
+      default:
+        break;
+    }
   }
 
+  // Filter jobs based on selected filters
   const jobsToRender = allJobs.filter(job => {
-    if(location.length != "" && location !== job.location) return false;
-    if(places.length != 0 && !places.includes(job.place)) return false;
-    if(durations.length != 0 && !durations.includes(job.duration)) return false;
-    if(roles.length != 0 && !roles.includes(job.role)) return false;
+    if (location !== "" && location !== job.location) return false;
+    if (places.length !== 0 && !places.includes(job.place)) return false;
+    if (durations.length !== 0 && !durations.includes(job.duration)) return false;
+    if (roles.length !== 0 && !roles.includes(job.role)) return false;
     return true;
-  })
-
-  console.log(jobsToRender);
-  // console.log()
+  });
 
   return (
     <div>
-      
+      {/* Landing Page Section */}
       <section className="landing-page">
         {/* Background Image */}
-        <img className = "img" src={plantBackground}></img>
+        <img className="img" src={plantBackground} alt="Plant Background"></img>
         {/* Content */}
         <div className="landing-content">
           <p className="welcome-message">Discover your <br /> next Job!</p>
           <p className="caption">Explore your passions.</p>
-          {/* Use Link to navigate to the JobsPage */}
-          
         </div>
       </section>
       
-      
-      
+      {/* Filters Component */}
       <Filters addFilter={addFilter} removeFilter={removeFilter}/>
+      {/* Job Listings Component */}
       <JobListings jobs={jobsToRender}/>
     </div>
   )
 }
 
-export default Jobs
+export default Jobs;
