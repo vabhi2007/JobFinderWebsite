@@ -86,22 +86,22 @@
 }
 
 .about-mission {
-  margin-top: -0.1vw;
+  margin-top: 1vw;
   font-family: 'Enriqueta-Regular';
   font-size: 3vw;
-  margin-bottom: 0.5vw;
+  margin-bottom: 2vw;
 }
 
 .about-text-and-image-container {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Vertically center the content */
-  margin-bottom: 3vw;
+  margin-bottom: 4vw;
 }
 
 .about-paragraph {
   font-family: 'DongleLight';
-  font-size: 35px;
+  font-size: 2.5vw;
   max-width: 85%;
 }
 
