@@ -95,7 +95,7 @@
 .about-text-and-image-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically center the content */
+  align-items: center;
   margin-bottom: 4vw;
 }
 
@@ -106,12 +106,12 @@
 }
 
 .about-image {
-  width: 150vw; /* Adjust as needed */
-  height: 20vw; /* Allow the height to adjust based on the image */
-  background-image: url('./images/planting plant.png'); /* Set the image URL */
+  width: 150vw;
+  height: 20vw;
+  background-image: url('./images/planting plant.png');
   background-size: cover;
   opacity: 70%;
-  margin-right: 3vw; /* Adjust the margin to move the image closer to the text */
+  margin-right: 3vw;
   border-radius: 5vw;
 }
 
@@ -165,7 +165,7 @@
 .value-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically center the content */
+  align-items: center;
   margin-bottom: -1vw;
 }
 
@@ -175,45 +175,45 @@
 }
 
 .values-icon1 {
-  width: 10vw; /* Adjust as needed */
-  height: 10vw; /* Allow the height to adjust based on the image */
-  background-image: url('./images/noun-tree.svg'); /* Set the image URL */
+  width: 10vw;
+  height: 10vw;
+  background-image: url('./images/noun-tree.svg');
   background-size: cover;
   opacity: 70%;
-  margin-right: 6.5vw; /* Adjust the margin to move the image closer to the text */
+  margin-right: 6.5vw;
   margin-top: -3vw;
   opacity: 60%;
 }
 
 .values-icon2 {
-  width: 10vw; /* Adjust as needed */
-  height: 10vw; /* Allow the height to adjust based on the image */
-  background-image: url('./images/noun-collaboration.svg'); /* Set the image URL */
+  width: 10vw;
+  height: 10vw;
+  background-image: url('./images/noun-collaboration.svg');
   background-size: cover;
   opacity: 70%;
-  margin-right: 6.5vw; /* Adjust the margin to move the image closer to the text */
+  margin-right: 6.5vw;
   margin-top: -3vw;
   opacity: 60%;
 }
 
 .values-icon3 {
-  width: 10vw; /* Adjust as needed */
-  height: 10vw; /* Allow the height to adjust based on the image */
-  background-image: url('./images/noun-flag.svg'); /* Set the image URL */
+  width: 10vw;
+  height: 10vw;
+  background-image: url('./images/noun-flag.svg');
   background-size: cover;
   opacity: 70%;
-  margin-right: 6.5vw; /* Adjust the margin to move the image closer to the text */
+  margin-right: 6.5vw;
   margin-top: -3vw;
   opacity: 60%;
 }
 
 .values-icon4 {
-  width: 10vw; /* Adjust as needed */
-  height: 10vw; /* Allow the height to adjust based on the image */
-  background-image: url('./images/noun-planting.svg'); /* Set the image URL */
+  width: 10vw;
+  height: 10vw;
+  background-image: url('./images/noun-planting.svg');
   background-size: cover;
   opacity: 70%;
-  margin-right: 6.5vw; /* Adjust the margin to move the image closer to the text */
+  margin-right: 6.5vw;
   margin-top: -3vw;
   opacity: 60%;
 }
@@ -230,7 +230,7 @@
 
 .slideshow {
   position: relative;
-  margin-top: 1vw; /* Adjust the margin as needed */
+  margin-top: 1vw;
   width: 100%;
   margin-bottom: 2vw;
 }
@@ -240,7 +240,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 35vw; /* Adjust the height as needed */
+  height: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,7 +260,7 @@
 .slide-title {
   font-size: 2.5vw;
   font-family: 'Enriqueta-Regular';
-  color: #3E3E3E; /* Adjust the color as needed */
+  color: #3E3E3E;
   margin-bottom: 2vw;
   opacity: 100%;
   text-align: center;
@@ -269,7 +269,7 @@
 .slide-caption {
   font-size: 3vw;
   font-family: 'DongleLight';
-  color: #3E3E3E; /* Adjust the color as needed */
+  color: #3E3E3E;
   opacity: 100%;
   margin-top: 1vw;
   text-align: center;
@@ -288,7 +288,7 @@
   border: none;
   cursor: pointer;
   border-radius: 0 1vw 1vw 0;
-  z-index: 1; /* Ensure the buttons are above the overlay */
+  z-index: 1;
 }
 
 .next {
