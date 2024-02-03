@@ -15,3 +15,9 @@
   font-family: 'AbhayaLibre';
   src: url('./assets/fonts/AbhayaLibre/AbhayaLibre-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Enriqueta';
+  src: url('./assets/fonts/Enriqueta/Enriqueta-Regular.ttf');
+  
+}
