@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav>
       
-      <li className='Maintitle'>Verdantia | Careers</li>
+      <li className='Maintitle'>VERDANTIA | Careers</li>
       <ul className={menuOpen ? "open" : ""}>
         <li><NavLink to = "/">Home</NavLink></li>
         <li><NavLink to = "/benefits">Benefits</NavLink></li>
