@@ -5,9 +5,9 @@ import JobForm from './JobForm'
 const JobListing = ({JobName, JobLocation, JobPlace, JobDescription}) => {
 
     const [isFormVisible, setFormVisible] = useState(false);
-
     const handleClick = () => {
         setFormVisible(!isFormVisible);
+
     }
 
   return (
@@ -22,7 +22,10 @@ const JobListing = ({JobName, JobLocation, JobPlace, JobDescription}) => {
       <div className='jobDescription'>
         {JobDescription}
       </div>
-      <button className='applyButton' onClick={handleClick}>Apply</button>
+      <button className={isFormVisible ? 'applyButton clicked' : 'applyButton'} onClick={handleClick}>
+        {isFormVisible && <p>Close</p>}
+        {!isFormVisible && <p>Apply</p>}
+      </button>
     </div>
    <div>{isFormVisible && <JobForm/>}</div>
     </div>

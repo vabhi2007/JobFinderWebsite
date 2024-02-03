@@ -61,6 +61,15 @@
     font-size: max(2vw, 5px);
 
     display: block;
+
+}
+
+p {
+    margin: 0;
+}
+
+.clicked {
+    background: #C0D2C9; 
 }
 
 .applyButton:hover {

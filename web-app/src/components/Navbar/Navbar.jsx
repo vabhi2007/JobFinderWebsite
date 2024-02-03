@@ -9,6 +9,11 @@ export const Navbar = () => {
     <nav>
       
       <li className='Maintitle'>Verdantia | Careers</li>
+      <ul className={menuOpen ? "open" : ""}>
+        <li><NavLink to = "/">Home</NavLink></li>
+        <li><NavLink to = "/benefits">Benefits</NavLink></li>
+        <li><NavLink to = "/jobs">Jobs</NavLink></li>
+      </ul>
       <div className='menu' onClick={
         () => {
           setMenuOpen(!menuOpen);
@@ -18,12 +23,6 @@ export const Navbar = () => {
           <span></span>
           <span></span>
         </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li><NavLink to = "/">Home</NavLink></li>
-        <li><NavLink to = "/benefits">Benefits</NavLink></li>
-        <li><NavLink to = "/jobs">Jobs</NavLink></li>
-      </ul>
-      
     </nav>
   )
 }
