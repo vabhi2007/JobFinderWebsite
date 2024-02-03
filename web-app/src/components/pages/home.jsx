@@ -1,5 +1,6 @@
 // src/HomePage.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
 import slide1 from "./images/slide1.jpg"
 import slide2 from "./images/slide2.jpg"
@@ -36,7 +37,10 @@ const HomePage = () => {
         <div className="landing-content">
           <p className="welcome-message">Welcome to <br /> Verdantia!</p>
           <p className="caption">Where Sustainability meets Innovation.</p>
-          <button className="join-button">Join the team</button>
+          {/* Use Link to navigate to the JobsPage */}
+          <Link to="/jobs">
+            <button className="join-button">Join the team</button>
+          </Link>
         </div>
       </section>
 
@@ -116,7 +120,10 @@ const HomePage = () => {
 
       {/* Final Join Button */}
       <div className="final-join-button">
-        <button className="join-button">Join the team</button>
+        {/* Use Link to navigate to the JobsPage */}
+        <Link to="/jobs">
+          <button className="join-button">Join the team</button>
+        </Link>
       </div>
     </div>
   );
