@@ -9,12 +9,11 @@ const Benefits = () => {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  
   return (
     <div className='entirePage'>
-      <section className="landing-page">
-      <div className='landing-background-image'>
+      <div className='imageBox'>
       </div>
-      </section>
 
       <header className='header-career'>
         <p>Career</p>
@@ -92,7 +91,7 @@ const Benefits = () => {
           </div>  
           <div className="box-content">
               <p>Unlimited Parental & Family Leave</p>
-          </div>
+            </div>
         </div>
 
         <div className="box2">
