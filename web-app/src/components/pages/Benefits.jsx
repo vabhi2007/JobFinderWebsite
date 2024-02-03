@@ -111,7 +111,7 @@ const Benefits = () => {
           </header>
           
           <header className='reason2'>
-          <p className='reason2-h'>2. You can define your own path</p>
+          <p className='reason4-h'>2. You can define your own path</p>
             <p className='line-wrap'>
               At Verdantia, we believe that every individual brings a unique set of skills, talents, and aspirations to 
               the table. That's why we're proud to foster an environment where you don't just have a job – you have a 

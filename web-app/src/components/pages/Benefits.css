@@ -130,7 +130,7 @@
     z-index: 4;
     position: absolute;
     top: 115%;
-    left: 32.5%;
+    left: 37.5%;
     transform: translate(-50%, -50%);
     text-align: left;
     
@@ -147,7 +147,7 @@
   .box1 {
     position: absolute;
     top: 125%;
-    left: 25%;
+    left: 27%;
     width: 9vw;
     height: 11vw;
     margin: 10px;
@@ -162,7 +162,7 @@
   .box2 {
     position: absolute;
     top:125%;
-    left: 35%;
+    left: 37%;
     width: 9vw;
     height: 11vw;
     margin: 10px;
@@ -176,7 +176,7 @@
   .box3 {
     position: absolute;
     top: 125%;
-    left: 45%;
+    left: 47%;
     width: 9vw;
     height: 11vw;
     margin: 10px;
@@ -190,7 +190,7 @@
   .box4 {
     position: absolute;
     top:125%;
-    left: 55%;
+    left: 57%;
     width: 9vw;
     height: 11vw;
     margin: 10px;
@@ -204,7 +204,7 @@
   .box5 {
     position: absolute;
     top:125%;
-    left: 65%;
+    left: 67%;
     width: 9vw;
     height: 11vw;
     margin: 10px;
@@ -299,7 +299,7 @@
 
     position: absolute;
     top: 162%;
-    left: 49.8%;
+    left: 51.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -315,7 +315,7 @@
 
     position: absolute;
     top: 223%;
-    left: 36%;
+    left: 39%;
     transform: translate(-50%, -50%);
     text-align: left;
     z-index: 1;
@@ -332,7 +332,7 @@
 
     position: absolute;
     top: -20%;
-    left: 20.8%;
+    left: 26.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -345,29 +345,12 @@
 
   }
 
-  .reason2-h {
-
-
-    position: absolute;
-    top: -29%;
-    left: 26.3%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    align-self: start;
-    z-index: 1;
-    font-size: 2.1vw;
-    font-family: "Enriqueta" ;
-    margin-top: 1px;
-    margin-bottom: 0px;
-    color: rgb(52, 52, 52);
-    padding: 0%;
-  }
 
   .reason3-h {
 
     position: absolute;
-    top: -14%;
-    left: 35.8%;
+    top: -19%;
+    left: 45.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -380,12 +363,28 @@
 
   }
 
+  .reason4-h {
+
+    position: absolute;
+    top: -34%;
+    left: 34.8%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    align-self: start;
+    z-index: 3;
+    font-size: 2.1vw;
+    font-family: "Enriqueta" ;
+    white-space: nowrap;
+    color: rgb(52, 52, 52);
+    padding: 0%;
+
+  }
 
   .reason1 {
 
     position: absolute;
     top: 246%;
-    left: 46.8%;
+    left: 47.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
@@ -401,23 +400,23 @@
 
     position: absolute;
     top: 271%;
-    left: 46.8%;
+    left: 47.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
     z-index: 3;
     font-size: 1.5vw;
     font-family: "DongleLight" ;
-
     color: rgb(52, 52, 52);
     padding: 0%; 
+
   }
 
   .reason3 {
 
     position: absolute;
     top: 301%;
-    left: 46.8%;
+    left: 47.8%;
     transform: translate(-50%, -50%);
     text-align: left;
     align-self: start;
