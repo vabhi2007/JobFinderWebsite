@@ -8,6 +8,8 @@ import slide3 from "./images/slide3.jpg"
 import slide4 from "./images/slide4.jpg" 
 import slide5 from "./images/slide5.jpg"
 
+import plantBackground from "./images/plant background trimmed.png"
+
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -32,7 +34,7 @@ const HomePage = () => {
       {/* Section 1: Landing Page */}
       <section className="landing-page">
         {/* Background Image */}
-        <div className="landing-background-image"></div>
+        <img className = "img" src={plantBackground}></img>
         {/* Content */}
         <div className="landing-content">
           <p className="welcome-message">Welcome to <br /> Verdantia!</p>
@@ -111,7 +113,9 @@ const HomePage = () => {
         <div className="slideshow">
           <button className="prev" onClick={prevSlide}>&#10094;</button>
           <div className="slide-title">{slides[currentSlide].title}</div>
-          <div className="slide" style={{ backgroundImage: `url(${slides[currentSlide].image})`, opacity: '0.7' }}></div>
+          <div className="slide" style={{ backgroundImage: `url(${slides[currentSlide].image})`, opacity: '0.7' }}>
+            <p className="slide-overlay">"30 per cent of emissions from industry and fossil fuels are soaked up by forests and woodlands. Yet every year the world loses 10 million hectares of forest. Deforestation and forest degradation accounts for 11 per cent of carbon emissions."</p>
+          </div>
           <div className="slide-caption">{slides[currentSlide].caption}</div>
           <button className="next" onClick={nextSlide}>&#10095;</button>
         </div>
