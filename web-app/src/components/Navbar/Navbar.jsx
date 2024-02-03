@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <nav>
       
-      <li className='Maintitle'>Verdantia | Careers</li>
+      <li className='Maintitle'> <b>VERDANTIA</b> | Careers</li>
       <div className='menu' onClick={
         () => {
           setMenuOpen(!menuOpen);
