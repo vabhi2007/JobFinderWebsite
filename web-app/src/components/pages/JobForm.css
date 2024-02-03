@@ -1,8 +1,8 @@
 .FormBox {
     width: 45.1vw;
     height: 500px;
-    border-radius: 21px;
-    border: 2px solid #000;
+    border-radius: 1vw;
+    border: 0.1vw solid #000;
     padding: 1vw;
     background: #D7E1DB;
     margin-top: 1vw;

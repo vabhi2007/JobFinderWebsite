@@ -68,13 +68,13 @@ nav ul li a:hover{
 }
 nav .menu {
     display: none;
-    position: absolute;
-    top: 21.3vh;
-    right: 3vw;
+    position: relative;
+    
     flex-direction: column;
     justify-content: space-between;
     width: 3vw;
     height: 2vw;
+    padding-right: 3vw;
 }
 nav .menu span {
     height: 0.3vw;
@@ -90,8 +90,9 @@ nav .menu span {
     }
     
     nav {
-        flex-direction: column;
-        align-items: start;
+        flex-direction: row;
+        align-items: center;
+        
     }
 
     nav ul {

@@ -34,6 +34,6 @@ JobListing.propTypes = {
     JobLocation: PropTypes.string.isRequired,
     JobPlace: PropTypes.string.isRequired,
     JobDescription: PropTypes.string.isRequired,
-    JobImage: PropTypes.any.isRequired
+    
   }
 export default JobListing
